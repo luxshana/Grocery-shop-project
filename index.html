@@ -17,7 +17,6 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
   </head>
   <body>
     <section
@@ -36,21 +35,21 @@
         action=""
         class="d-flex align-items-center justify-content-center p-2 w-100"
         style="max-width: 500px">
-        <div class="input-group">
+        <div class="input-group gap-2">
           <label for="search-box" class="visually-hidden">Search</label>
           <input
             type="search"
             id="search-box"
-            class="form-control rounded"
+            class="form-control rounded-3 p-2 m-1"
             placeholder="Search here..."
             aria-label="Search"
             aria-describedby="search-button" />
           <button
             type="submit"
-            class="input-group-text text-warning"
+            class="input-group-text text-warning rounded-3"
             id="search-button"
             aria-label="Submit search">
-            <i class="fas fa-search fa-lg "></i>
+            <i class="fas fa-search fa-lg"></i>
           </button>
         </div>
       </form>
@@ -74,15 +73,6 @@
               <button class="btn btn-outline-warning m-2 bg-light rounded-5">
                 <span class="category-icon">🥦</span> Veg
               </button>
-              <button class="btn btn-outline-warning m-2 bg-light rounded-5">
-                <span class="category-icon">🍞</span> Bread
-              </button>
-              <button class="btn btn-outline-warning m-2 bg-light rounded-5">
-                <span class="category-icon">🍫</span> Chocolates
-              </button>
-              <button class="btn btn-outline-warning m-2 bg-light rounded-5">
-                <span class="category-icon">🥦</span> Veg
-              </button>
             </div>
             <div class="carousel-item">
               <button class="btn btn-outline-warning bg-light m-2 rounded-5">
@@ -94,15 +84,7 @@
               <button class="btn btn-outline-warning m-2 bg-light rounded-5">
                 <span class="category-icon">🎂</span> Cakes
               </button>
-              <button class="btn btn-outline-warning m-2 bg-light rounded-5">
-                <span class="category-icon">🍲</span> Koththu
-              </button>
-              <button class="btn btn-outline-warning m-2 bg-light rounded-5">
-                <span class="category-icon">🍗</span> Chicken
-              </button>
-              <button class="btn btn-outline-warning m-2 bg-light rounded-5">
-                <span class="category-icon">🎂</span> Cakes
-              </button>
+        
             </div>
             <div class="carousel-item">
               <button class="btn btn-outline-warning m-2 bg-light rounded-5">
@@ -114,15 +96,7 @@
               <button class="btn btn-outline-warning m-2 bg-light rounded-5">
                 <span class="category-icon">🥛</span> Milk
               </button>
-              <button class="btn btn-outline-warning m-2 bg-light rounded-5">
-                <span class="category-icon">🍟</span> Snacks
-              </button>
-              <button class="btn btn-outline-warning m-2 bg-light rounded-5">
-                <span class="category-icon">🛒</span> Groceries
-              </button>
-              <button class="btn btn-outline-warning m-2 bg-light rounded-5">
-                <span class="category-icon">🥛</span> Milk
-              </button>
+             
             </div>
           </div>
           <button
@@ -148,35 +122,54 @@
     <!-- Slider Section -->
     <section class="features py-5 bg-light">
       <div class="container">
-        <div class="swiper mySwiper rounded-5 ">
+        <div class="swiper mySwiper rounded-5">
           <div class="swiper-wrapper rounded-5 gap-2">
-            <div class="swiper-slide text-center rounded-5 p-2  bg-secondary">
-              <p class="lead">Hurry Up! Get 20% Off</p>
-              <h3 class="h2">Fresh food every day<br />from FocoFresh</h3>
-              <button class="btn btn-light btn-outline-warning mt-3">
-                Shop Now
-              </button>
+            <div
+              class="swiper-slide d-flex flex-column flex-md-row align-items-center justify-content-between text-center rounded-5 p-2 bg-secondary">
+              <div
+                class="d-flex flex-column justify-content-center align-items-center text-white text-md-start w-100 w-md-50">
+                <p class="lead mb-2">Hurry Up! Get 20% Off</p>
+                <h3 class="h2">Fresh food every day<br />from FocoFresh</h3>
+                <button class="btn btn-light btn-outline-warning mt-3">
+                  Shop Now
+                </button>
+              </div>
               <img
                 src="image/cat-1.png"
-                class="img-fluid mt-3"
+                class="img-fluid mt-3 mt-md-0 w-75 w-md-auto"
                 alt="Tomatoes" />
             </div>
-            <div class="swiper-slide text-center p-2 rounded-5 bg-secondary">
-              <p class="lead">Limited Offer!</p>
-              <h3 class="h2">Fresh Green Veggies<br />Direct to You</h3>
-              <button class="btn btn-light mt-3 btn-outline-warning">
-                Shop Now
-              </button>
-              <img src="image/cat-1.png" class="img-fluid mt-3" alt="Lettuce" />
+              <div
+              class="swiper-slide d-flex flex-column flex-md-row align-items-center justify-content-between text-center rounded-5 p-2 bg-secondary">
+              <div
+                class="d-flex flex-column justify-content-center align-items-center text-white text-md-start w-100 w-md-50">
+                <p class="lead mb-2">Limited Offer!</p>
+                <h3 class="h2">Fresh Green Veggies<br />Direct to You</h3>
+                <button class="btn btn-light btn-outline-warning mt-3">
+                  Shop Now
+                </button>
+              </div>
+              <img
+                src="image/cat-1.png"
+                class="img-fluid mt-3 mt-md-0 w-75 w-md-auto"
+                alt="Tomatoes" />
             </div>
-            <div class="swiper-slide text-center p-2 rounded-5 bg-warning">
-              <p class="lead">Offer!</p>
-              <h3 class="h2">Garden Veggies<br />Direct to You</h3>
-              <button class="btn btn-light mt-3 btn-outline-warning">
-                Shop Now
-              </button>
-              <img src="image/cat-1.png" class="img-fluid mt-3" alt="Lettuce" />
+           <div
+              class="swiper-slide d-flex flex-column flex-md-row align-items-center justify-content-between text-center rounded-5 p-2 bg-secondary">
+              <div
+                class="d-flex flex-column justify-content-center align-items-center text-white text-md-start w-100 w-md-50">
+                <p class="lead mb-2"> Offer!</p>
+                <h3 class="h2">Garden Veggies<br />Direct to You</h3>
+                <button class="btn btn-light btn-outline-warning mt-3">
+                  Shop Now
+                </button>
+              </div>
+              <img
+                src="image/cat-1.png"
+                class="img-fluid mt-3 mt-md-0 w-75 w-md-auto"
+                alt="Tomatoes" />
             </div>
+           
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -192,7 +185,8 @@
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           <div class="col">
             <div class="card h-100 position-relative">
-              <span class="badge bg-danger position-absolute top-0 start-0 m-2"
+              <span
+                class="badge bg-danger position-absolute top-0 start-0 p-2 m-2"
                 >15% OFF</span
               >
               <img
@@ -208,7 +202,8 @@
           </div>
           <div class="col">
             <div class="card h-100 position-relative">
-              <span class="badge bg-danger position-absolute top-0 start-0 m-2"
+              <span
+                class="badge bg-danger position-absolute top-0 p-2 start-0 m-2"
                 >10% OFF</span
               >
               <img
@@ -250,7 +245,8 @@
           </div>
           <div class="col">
             <div class="card h-100 position-relative">
-              <span class="badge bg-danger position-absolute top-0 start-0 m-2"
+              <span
+                class="badge bg-danger position-absolute top-0 p-2 start-0 m-2"
                 >35% OFF</span
               >
               <img
@@ -289,7 +285,5 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="js/script.js"></script>
-  
-
   </body>
 </html>
