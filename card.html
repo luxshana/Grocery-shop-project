@@ -10,100 +10,123 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body class="bg-light">
-    <div class="container my-4">
-      <div class="card shadow-sm">
-        <div
-          class="card-header d-flex justify-content-between align-items-center bg-light">
-          <button class="btn back-btn" onclick="goBack()">
-            <i class="fas fa-arrow-left"></i>
-          </button>
-          <span class="fw-bold">Product Details</span>
-        </div>
-        <div class="card-body">
-          <div
-            class="card text-center bg-light align-items-center p-4 rounded-3">
+  <body>
+    <div class="cart-top-bar">
+      <button class="cart-top-bar-btn" onclick="goBack()">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <div class="fw-bold">Product Details</div>
+      <button class="cart-top-bar-btn" onclick="">
+        <i class="fas fa-shopping-cart"></i>
+      </button>
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper gap-2">
+        <div class="swiper-slide bg-light flex-column align-items-start rounded-4 py-4">
+          <div class="card p-4 align-items-center rounded-3">
             <img
               src="image/cat-1.png"
               alt="Avocado"
               class="img-fluid"
               style="width: 150px" />
           </div>
-          <div class="product-info mt-3">
-            <h2 class="h2 mb-0">Avocado</h2>
-            <p class="text-muted mb-1">500gm</p>
-            <div class="price text-success fs-4">$89.99</div>
-            <p class="text-muted small">Available on fast delivery</p>
-            <div class="d-flex gap-2 mt-2">
-              <span class="badge bg-secondary rounded-pill">Halal Food</span>
-              <span class="badge bg-secondary rounded-pill">Fresh Fruit</span>
-            </div>
-            <div class="description mt-3 p-3 rounded-3">
-              <strong>Description:</strong><br />
-              100% satisfaction guarantee. If you experience any of the
-              following issues, missing, poor item, late arrival, unprofessional
-              service... <a href="#">Read more</a> 100% satisfaction guarantee.
-              If you experience any of the following issues, missing, poor item,
-              late arrival, unprofessional service... <a href="#">Read more</a>
-            </div>
+        </div>
+        <div class="swiper-slide bg-light flex-column align-items-start rounded-4 py-4">
+          <div class="card p-4 align-items-center rounded-3">
+            <img
+              src="image/cat-1.png"
+              alt="Avocado"
+              class="img-fluid"
+              style="width: 150px" />
           </div>
-          <div class="add-more mt-4">
-            <h3 class="h6">Want to Add more items?</h3>
-            <div class="card mb-2">
-              <div class="card-body d-flex align-items-center p-2">
-                <img
-                  src="image/cat-1.png"
-                  alt="Beetroot Red"
-                  class="me-2"
-                  style="width: 50px" />
-                <div class="flex-grow-1">
-                  <div>Beetroot Red</div>
-                  <div class="fw-bold">$55.99</div>
-                </div>
-                <button class="btn btn-warning btn-sm rounded-circle add-btn">
-                  +
-                </button>
-              </div>
-            </div>
-            <div class="card mb-2">
-              <div class="card-body d-flex align-items-center p-2">
-                <img
-                  src="image/cat-1.png"
-                  alt="Beetroot Red"
-                  class="me-2"
-                  style="width: 50px" />
-                <div class="flex-grow-1">
-                  <div>Beetroot Red</div>
-                  <div class="fw-bold">$55.99</div>
-                </div>
-                <button class="btn btn-warning btn-sm rounded-circle add-btn">
-                  +
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex justify-content-between align-items-center mt-4">
-            <div class="input-group input-group-sm" style="width: 80px">
-              <button
-                class="btn btn-outline-secondary"
-                onclick="updateQuantity(-1)">
-                -
-              </button>
-              <span id="quantity" class="mx-2">2</span>
-              <button
-                class="btn btn-outline-secondary"
-                onclick="updateQuantity(1)">
-                +
-              </button>
-            </div>
-            <a href="checkout.html" class="btn btn-warning flex-grow-1 ms-3"
-              >Add to cart</a
-            >
+        </div>
+        <div class="swiper-slide bg-light flex-column align-items-start rounded-4 py-4">
+          <div class="card p-4 align-items-center rounded-3">
+            <img
+              src="image/cat-1.png"
+              alt="Avocado"
+              class="img-fluid"
+              style="width: 150px" />
           </div>
         </div>
       </div>
     </div>
+    <div class="card cart-title rounded-3 p-2 mt-3">
+      <div class="cart-title-details">
+        <h4>Avocado</h4>
+        <p>500gm</p>
+        <div class="cart-title-price d-flex justify-content-between">
+          <p>$38.55</p>
+          <p>Available on fast delivery</p>
+        </div>
+      </div>
+    </div>
+    <div class="card cart-desc mt-3">
+      <div class="p-2">
+        <strong>Description</strong><br />
+        100% satisfaction guarantee. If you experience any of the following
+        issues, missing, poor item, late arrival, unprofessional service...
+        <a href="#">Read more</a>
+      </div>
+    </div>
+    <div class="c-1 card p-2 mt-3 rounded-3">
+      <h3 class="h6">Want to Add more items?</h3>
+      <div class="card rounded-3 mb-2">
+        <div class="card-body d-flex align-items-center p-2">
+          <img
+            src="image/cat-1.png"
+            alt="Beetroot Red"
+            class="card-img-top me-2"
+            style="width: 50px" />
+          <div class="flex-grow-1">
+            <div>Beetroot Red</div>
+            <div class="fw-bold">$55.99</div>
+          </div>
+          <button class="btn btn-warning btn-sm rounded-circle add-btn">
+            +
+          </button>
+        </div>
+      </div>
+      <div class="card mb-2">
+        <div class="card-body d-flex align-items-center p-2">
+          <img
+            src="image/cat-1.png"
+            alt="Beetroot Red"
+            class="card-img-top me-2"
+            style="width: 50px" />
+          <div class="flex-grow-1">
+            <div>Beetroot Red</div>
+            <div class="fw-bold">$55.99</div>
+          </div>
+          <button class="btn btn-warning btn-sm rounded-circle add-btn">
+            +
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between align-items-center p-3 mt-4">
+      <button class="slider-btn1 text-color-2">
+        <span class="category-icon rounded-10" onclick="updateQuantity(1)"
+          >+</span
+        >
+        <span id="quantity" class="mx-2 fw-semibold">2</span>
+        <span class="category-icon rounded-circle" onclick="updateQuantity(-1)"
+          >-</span
+        >
+      </button>
+
+      <a
+        href="checkout.html"
+        class="btn btn-warning d-flex align-items-center ms-3 rounded-pill px-4">
+        <i class="bi bi-bag me-2"></i> Add to cart
+      </a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

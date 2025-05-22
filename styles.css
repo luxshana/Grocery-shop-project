@@ -1,0 +1,137 @@
+:root {
+  --clr_one: #325730;
+  --clr_two: #a70000;
+  --clr_three: #325730;
+  --clr_four: #00b957;
+  --clr_five: #fbfee3;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--clr_five);
+  color: var(--clr_one);
+  font-family: Arial, sans-serif;
+  padding: 0 1rem;
+}
+.home {
+  padding: 0.5rem 0;
+}
+.text-color-2 {
+  color: var(--clr_two);
+}
+.search-btn {
+  background-color: var(--clr_two);
+}
+.category-icon {
+  background-color: var(--clr_five);
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+.categorySwiper .swiper-slide {
+  width: auto !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.categorySwiper .btn {
+  white-space: nowrap;
+  padding: 10px 15px;
+  font-size: 1rem;
+  min-width: 100px;
+  max-width: 200px;
+  text-align: center;
+}
+
+.categorySwiper .swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.mySwiper .swiper-slide {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  max-width: 400px;
+  background-color: var(--clr_two);
+  color: var(--clr_five);
+}
+
+.mySwiper .swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.mySwiper .swiper-slide > div {
+  width: 100%;
+}
+
+.slider-btn {
+  padding: 0.2rem 0.6rem;
+  font-size: 0.75rem;
+  border-radius: 15px;
+}
+.offer-badge {
+  color: var(--clr_five);
+  background-color: var(--clr_two);
+  font-size: 0.5rem;
+  border-radius: 0 0 10px 10px;
+  position: absolute;
+  padding: 4px;
+  top: 0;
+  left: 0.5rem;
+}
+.card-img-top {
+  background-color: var(--clr_five);
+}
+.card-text {
+  padding: 0 0.4rem;
+  font-size: 0.6rem;
+}
+.card-price {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  padding: 0 0.4rem;
+  color: var(--clr_one);
+}
+.card-price a i {
+  background-color: var(--clr_two);
+  padding: 0.4rem;
+  border-radius: 15px;
+  color: var(--clr_five);
+}
+.cart-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+.cart-top-bar-btn {
+  font-size: 0.75rem;
+  padding: 0.2rem;
+  border: 0;
+  background-color: #fff;
+  border-radius: 15px;
+}
+.c-1{
+  background-color: #fbfee3;
+}
+.slider-btn1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f8f9fa;
+      border: 1px solid #dee2e6;
+      border-radius: 30px;
+      padding: 0.2rem;
+      user-select: none;
+    }
+.cart-title {
+    
+}

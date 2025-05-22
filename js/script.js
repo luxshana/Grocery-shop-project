@@ -2,14 +2,7 @@ let searchForm = document.querySelector(".search-form");
 const slider = document.getElementById("slider");
 const dots = document.querySelectorAll(".dot");
 const swiper = new Swiper(".mySwiper", {
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  autoplay: {
-    delay: 3000,
-  },
+  slidesPerView: "auto",
 });
 function goToSlide(index) {
   slider.style.transform = `translateX(-${index * 100}%)`;
@@ -35,3 +28,8 @@ function goBack() {
     alert("No previous page available.");
   }
 }
+
+const categorySwiper = new Swiper(".categorySwiper", {
+  slidesPerView: "auto",
+  spaceBetween: 1,
+});
